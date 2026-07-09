@@ -468,6 +468,16 @@
   footer a { color: inherit; text-decoration: none; }
   footer a:hover { color: var(--ink); text-decoration: underline; }
   footer .wrap span { min-width: 0; }
+  footer .company-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+  footer .company-links a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
   footer .footer-links {
     display: flex;
     flex-direction: column;
@@ -624,7 +634,15 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Tano Holdings. All rights reserved.</span>
-    <span>Breakwater Operations SF · Coherascent Labs · Lune Synth · Malestrum</span>
+    <span class="company-links" aria-label="Portfolio websites">
+      <a href="https://breakwaterops.com" target="_blank" rel="noopener noreferrer">Breakwater Operations SF</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://coherascentlabs.com" target="_blank" rel="noopener noreferrer">Coherascent Labs</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://lunesynth.com" target="_blank" rel="noopener noreferrer">Lune Synth</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://malestrum.com" target="_blank" rel="noopener noreferrer">Malestrum</a>
+    </span>
     <span class="footer-links" aria-label="Related websites">
       <a href="https://barryrutherford.com" target="_blank" rel="noopener noreferrer">Barry Rutherford website</a>
       <a href="https://griffinrutherford.com" target="_blank" rel="noopener noreferrer">Griffin Rutherford website</a>
